@@ -1,4 +1,4 @@
-#+TITLE: Expectation Maximization
+#+TITLE: Expectation Maximization for Gaussian mixture modeled Piecewise Affine function
 
 * Example
 [[./img/example.gif]]
