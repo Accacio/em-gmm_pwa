@@ -1,0 +1,4 @@
+#+TITLE: Expectation Maximization
+
+* Example
+[[./img/example.gif]]
