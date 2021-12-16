@@ -6,7 +6,7 @@ function plot_responsibles(x, y, responsabilities, C, d, Sigma, pi,colors)
   t=min(x):max(x);
   hold on
   for i=1:M
-      plot(t,C(:,i)'*t+d(:,i),colors{i})
+      plot(t,C(:,i)'*t+d(:,i),'Color',colors{i})
   end
 
   for i=1:3
