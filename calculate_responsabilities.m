@@ -16,10 +16,6 @@ function responsabilities = calculate_responsabilities(x, y, C, d, Sigma, pi)
   end
   normalizing_constant=sum(respNum,2);
   rate=(respNum./normalizing_constant)';
-  % rate=(respNum)';
-  % x=rand(3,1);
-  % x=x+((1-[1 1 1]*x)*[1;1;1]/norm([1 1 1]')^2)
 
   responsabilities = rate;
-  % responsabilities(isnan(responsabilities)) = x;
 end
