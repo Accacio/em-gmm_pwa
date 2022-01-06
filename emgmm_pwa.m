@@ -61,7 +61,7 @@ for emInd=1:emMaxIter
     plot_responsibles(x, y, responsabilities,C,d,Sigma,pi_hat,colors);
     title("EM")
 
-    [C,d,~]=update_parameters(x, y, responsabilities);
+    [C,d,pi_hat]=update_parameters(x, y, responsabilities);
     [~,z_hat]=max(responsabilities,[],1);
 
   for i=1:3
