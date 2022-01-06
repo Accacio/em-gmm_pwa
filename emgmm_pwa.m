@@ -27,7 +27,7 @@ title('Ground truth');
 
 pi=repmat(1/M,1,M);
 eps=10;
-Sigma(:,:,1:3)=repmat(eps*eye(1),1,1,3);
+Sigma(:,:,1:M)=repmat(eps*eye(1),1,1,M);
 
 %% Initialize estimated parameters
 
