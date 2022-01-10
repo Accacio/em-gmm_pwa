@@ -22,7 +22,7 @@ function [C,d,responsabilities,pi,Sigma] = emgm_estimate(x,y,modes,emMaxIter,max
         subplot(2,1,2)
         cla
         plot_responsibles(x, y, responsabilities,C,d,Sigma,pi,colors);
-        title("EM")
+        title(['EM Gaussian Mixture iter=' num2str(emInd) ])
 
         [C,d,pi]=update_parameters(x, y, responsabilities);
         [~,z_hat]=max(responsabilities,[],1);
