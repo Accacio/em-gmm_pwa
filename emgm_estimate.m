@@ -3,7 +3,7 @@ function [C,d,responsabilities,pi,Sigma] = emgm_estimate(x,y,modes,emMaxIter,max
     % $y=-C_k^T x-d_k$
 
     %% Initialize estimated parameters
-    indexpts1=randi([1 size(x,2)-1],1,3);
+    indexpts1=randi([1 size(x,2)-1],1,modes);
     C=(y(:,indexpts1+1)-y(:,indexpts1))./(x(:,indexpts1+1)-x(:,indexpts1));
     d=y(:,indexpts1)-C.*x(:,indexpts1);
     C=C+rand(1,modes);
